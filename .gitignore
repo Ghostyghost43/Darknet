@@ -1,0 +1,23 @@
+# Compiled binaries
+deauth
+
+# Object files
+*.o
+*.obj
+
+# Build artifacts
+*.out
+*.exe
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
