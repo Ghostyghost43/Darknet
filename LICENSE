@@ -1,0 +1,60 @@
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2025 Darknet Project Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+ADDITIONAL TERMS AND CONDITIONS
+
+1. AUTHORIZED USE ONLY
+   This software is designed for authorized security testing, penetration
+   testing, and educational purposes only. Users must have explicit written
+   permission before testing any network, system, or device they do not own.
+
+2. LEGAL COMPLIANCE
+   Users are solely responsible for ensuring their use of this software
+   complies with all applicable local, state, federal, and international
+   laws and regulations. Unauthorized access to computer systems is illegal
+   in most jurisdictions.
+
+3. NO LIABILITY
+   The authors and contributors of this software shall not be held liable
+   for any damages, losses, or legal consequences resulting from the use
+   or misuse of this software. This includes, but is not limited to:
+   - Criminal prosecution
+   - Civil litigation
+   - Network disruption
+   - Data loss or corruption
+   - Privacy violations
+
+4. ETHICAL USE
+   By using this software, you agree to:
+   - Obtain proper authorization before testing
+   - Use the software only for legitimate security research
+   - Report discovered vulnerabilities responsibly
+   - Not use the software for malicious purposes
+   - Respect privacy and data protection laws
+
+5. EDUCATION AND RESEARCH
+   This software is intended primarily for:
+   - Security professionals conducting authorized assessments
+   - Students learning about network security in controlled environments
+   - Researchers studying network protocols and security mechanisms
+   - System administrators testing their own networks
+
+If you do not agree to these terms, you are not authorized to use this software.
+
+For the full text of the GNU General Public License v3.0, visit:
+https://www.gnu.org/licenses/gpl-3.0.en.html
