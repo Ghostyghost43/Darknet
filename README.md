@@ -25,14 +25,23 @@
 ### Quick Install
 
 ```bash
-# Clone the repository (use your actual GitHub URL)
+# Clone the repository
 git clone https://github.com/Ghostyghost43/Darknet.git
 cd Darknet
+
+# Checkout the development branch with DarkWiFi tool
+git checkout claude/wifi-cracking-tool-01F5apTCn5ihRsCHdm221yTP
+
+# Verify files are present
+ls -la
+# You should see: darkwifi.py, install.sh, wordlist_generator.py, requirements.txt
 
 # Make install script executable and run it
 chmod +x install.sh
 ./install.sh
 ```
+
+**Note:** The tool is currently in the development branch. Once merged to main, you can skip the checkout step.
 
 Or if you already have the files locally:
 ```bash
