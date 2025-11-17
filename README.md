@@ -25,11 +25,18 @@
 ### Quick Install
 
 ```bash
-# Clone the repository
+# Clone the repository (use your actual GitHub URL)
 git clone https://github.com/Ghostyghost43/Darknet.git
 cd Darknet
 
-# Run the installation script
+# Make install script executable and run it
+chmod +x install.sh
+./install.sh
+```
+
+Or if you already have the files locally:
+```bash
+cd Darknet
 chmod +x install.sh
 ./install.sh
 ```
