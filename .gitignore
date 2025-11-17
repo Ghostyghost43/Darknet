@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.pcap
+*.pcapng
+*.hccapx
+*.22000
+*.16800
+captures/
+cracked/
+*.log
+.DS_Store
