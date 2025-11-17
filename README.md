@@ -25,18 +25,28 @@
 ### Quick Install
 
 ```bash
-git clone <repository-url>
+# Clone the repository
+git clone https://github.com/Ghostyghost43/Darknet.git
 cd Darknet
+
+# Run the installation script
 chmod +x install.sh
 ./install.sh
 ```
 
-The installation script will:
-1. Check for required system dependencies
-2. Install missing tools (aircrack-ng, hcxtools, hashcat)
-3. Create a Python virtual environment
-4. Install Python dependencies
-5. Create a global `darkwifi` command
+The installer will automatically:
+- Check for Python 3 and create a virtual environment
+- Install required system packages (aircrack-ng, hcxtools, hashcat)
+- Install Python dependencies in the venv
+- Create a global `darkwifi` command accessible from anywhere
+- Set up working directories (captures, wordlists, cracked)
+
+**After installation, verify it works:**
+```bash
+darkwifi --help
+```
+
+You should see the DarkWiFi banner and usage information. You're now ready to start!
 
 ### Manual Dependencies
 
