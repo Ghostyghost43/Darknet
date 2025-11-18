@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDK4 Complete User Guide</title>
+    <style>
+        @media print {
+            body { margin: 0.5in; }
+            h1 { page-break-before: always; }
+            h1:first-of-type { page-break-before: avoid; }
+            pre, code { page-break-inside: avoid; }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #fff;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #95a5a6;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 2em;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 25px;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            color: #666;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            color: #c7254e;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+            line-height: 1.4;
+            margin: 15px 0;
+        }
+
+        pre code {
+            background: transparent;
+            border: none;
+            color: #f8f8f2;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .info {
+            background-color: #d1ecf1;
+            border-left: 5px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+<h1>MDK4 Complete User Guide</h1></p><p><h2>Table of Contents</h2>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#basic-syntax">Basic Syntax</a></li>
+<li><a href="#attack-modes-overview">Attack Modes Overview</a></li>
+<li><a href="#detailed-attack-mode-guide">Detailed Attack Mode Guide</a></li>
+<li><a href="#common-options">Common Options</a></li>
+<li><a href="#practical-examples">Practical Examples</a></li>
+<li><a href="#legal-disclaimer">Legal Disclaimer</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol></p><p>---</p><p><h2>Introduction</h2></p><p><strong>MDK4</strong> (Murder Death Kill 4) is a powerful wireless security testing tool designed for IEEE 802.11 protocol vulnerability assessment and penetration testing. It is the successor to MDK3 and provides enhanced capabilities for testing wireless network security.</p><p><h3>Key Features</h3>
+<ul>
+<li><strong>Modular Design</strong>: 9 different attack modes for comprehensive testing</li>
+<li><strong>Dual-Band Support</strong>: Works with both 2.4GHz and 5GHz networks</li>
+<li><strong>Dual Interface Support</strong>: Can use one interface for receiving and another for injecting</li>
+<li><strong>IDS Evasion</strong>: Supports ghosting and fragmenting techniques</li>
+<li><strong>Cross-Platform</strong>: Works on Linux, macOS, and other Unix-like systems</li>
+<li><strong>Based on Aircrack-ng</strong>: Uses the osdep library from aircrack-ng for frame injection</li>
+</ul></p><p><h3>What MDK4 is Used For</h3>
+<ul>
+<li>Penetration testing of wireless networks</li>
+<li>Testing wireless IDS/IPS systems</li>
+<li>Demonstrating wireless vulnerabilities</li>
+<li>Security research and education</li>
+<li>Network hardening assessments</li>
+</ul></p><p>---</p><p><h2>Installation</h2></p><p><h3>Prerequisites</h3>
+<pre><code><h1>Install required dependencies</h1>
+sudo apt-get update
+sudo apt-get install pkg-config libnl-3-dev libnl-genl-3-dev libpcap-dev build-essential
+</code></pre></p><p><h3>Installing MDK4</h3>
+<pre><code><h1>Clone the repository</h1>
+git clone https://github.com/aircrack-ng/mdk4</p><p><h1>Navigate to directory</h1>
+cd mdk4</p><p><h1>Compile</h1>
+make</p><p><h1>Install system-wide</h1>
+sudo make install
+</code></pre></p><p><h3>Verify Installation</h3>
+<pre><code>mdk4 --help
+</code></pre></p><p>---</p><p><h2>Basic Syntax</h2></p><p><h3>Command Structure</h3>
+<pre><code>mdk4 <interface> <attack_mode> [attack_options]
+</code></pre></p><p><h3>Dual Interface Mode</h3>
+<pre><code>mdk4 <interface_in> <interface_out> <attack_mode> [attack_options]
+</code></pre></p><p><h3>Getting Help</h3>
+<pre><code><h1>General help</h1>
+mdk4 --help</p><p><h1>Full help with all options</h1>
+mdk4 --fullhelp</p><p><h1>Help for specific attack mode</h1>
+mdk4 --help <attack_mode>
+</code></pre></p><p><h3>Preparing Your Wireless Interface</h3>
+<pre><code><h1>Check wireless interfaces</h1>
+iwconfig</p><p><h1>Put interface in monitor mode</h1>
+sudo airmon-ng start wlan0</p><p><h1>Your interface will typically become wlan0mon or mon0</h1>
+</code></pre></p><p>---</p><p><h2>Attack Modes Overview</h2></p><p>MDK4 has <strong>9 attack modes</strong>, each designated by a single letter:</p><p>| Mode | Name | Description |
+<tr><td>------</td><td>------</td><td>-------------</td></tr>
+<tr><td><strong>b</strong></td><td>Beacon Flooding</td><td>Sends beacon frames to show fake APs</td></tr>
+<tr><td><strong>a</strong></td><td>Authentication DoS</td><td>Sends authentication frames to all APs</td></tr>
+<tr><td><strong>d</strong></td><td>Deauthentication/Disassociation</td><td>Disconnects clients from APs</td></tr>
+<tr><td><strong>p</strong></td><td>SSID Probing</td><td>Probes APs and bruteforces hidden SSIDs</td></tr>
+<tr><td><strong>e</strong></td><td>EAPOL Start/Logoff</td><td>Floods AP with EAPOL frames</td></tr>
+<tr><td><strong>s</strong></td><td>Mesh Networks</td><td>Attacks IEEE 802.11s mesh networks</td></tr>
+<tr><td><strong>w</strong></td><td>WIDS Confusion</td><td>Confuses Wireless IDS/IPS systems</td></tr>
+<tr><td><strong>f</strong></td><td>Packet Fuzzer</td><td>Fuzzes packets to test implementations</td></tr>
+| <strong>x</strong> | PoC Testing | Tests for WiFi protocol vulnerabilities |</p><p>---</p><p><h2>Detailed Attack Mode Guide</h2></p><p><h3>Mode b - Beacon Flooding</h3></p><p><strong>Purpose</strong>: Creates multiple fake access points to confuse clients and network scanners.</p><p><strong>How it Works</strong>: Sends beacon frames that make fake APs appear in WiFi scans. Can crash network scanners and some drivers.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon b
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-n <SSID>          # Use SSID from file (one per line)
+-f <filename>      # Read SSIDs from file
+-v <filename>      # Read SSIDs and create specific APs (advanced)
+-t <filename>      # Read SSIDs from file and create WPA/WPA2 APs
+-a                 # Use all possible characters in SSIDs
+-m                 # Use valid MAC addresses from OUI database
+-c <channel>       # Create APs on specific channel (default: random)
+-s <pps>           # Set speed in packets per second (default: 50)
+-h                 # Hop to channel where AP is spoofed
+-w <encryptions>   # Specify encryption: n=None, w=WEP, t=TKIP, a=AES
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Create random fake APs</h1>
+mdk4 wlan0mon b -s 100</p><p><h1>Create fake APs from wordlist</h1>
+mdk4 wlan0mon b -f ssid_list.txt -s 200</p><p><h1>Create WPA2 fake APs on channel 6</h1>
+mdk4 wlan0mon b -f ssids.txt -c 6 -w a</p><p><h1>Create fake APs with valid MAC addresses</h1>
+mdk4 wlan0mon b -m -s 150
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing how network monitoring tools handle large numbers of APs</li>
+<li>Demonstrating security awareness</li>
+<li>Testing WiFi scanner applications</li>
+<li>Hiding legitimate networks in noise</li>
+</ul></p><p>---</p><p><h3>Mode a - Authentication DoS</h3></p><p><strong>Purpose</strong>: Floods access points with authentication requests to consume resources.</p><p><strong>How it Works</strong>: Sends continuous authentication frames to all detected APs, exhausting their resources and potentially causing denial of service.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon a
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-a <BSSID>         # Target specific AP by MAC address
+-m                 # Use valid MAC addresses from OUI database
+-i <filename>      # Read target MAC addresses from file
+-s <pps>           # Set speed in packets per second
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Attack all APs in range</h1>
+mdk4 wlan0mon a -s 100</p><p><h1>Attack specific AP</h1>
+mdk4 wlan0mon a -a 00:11:22:33:44:55</p><p><h1>Attack APs from file</h1>
+mdk4 wlan0mon a -i targets.txt -s 200
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing AP resilience against authentication floods</li>
+<li>Evaluating rate limiting implementations</li>
+<li>Testing failover mechanisms</li>
+</ul></p><p>---</p><p><h3>Mode d - Deauthentication/Disassociation</h3></p><p><strong>Purpose</strong>: Disconnect clients from access points.</p><p><strong>How it Works</strong>: Sends deauthentication and disassociation packets to clients, forcing them to disconnect from the AP. Works by monitoring data traffic and targeting active connections.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon d
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-w <filename>      # Whitelist of MAC addresses (BSSID, Client) to NOT attack
+-b <filename>      # Blacklist of MAC addresses to specifically attack
+-s <pps>           # Set speed in packets per second
+-c <channel>       # Focus on specific channel
+-E <ESSID>         # Target specific network by name
+-B <BSSID>         # Target specific AP by MAC address
+-S <MAC>           # Target specific client station
+-W                 # Disable 802.11w protection features
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Deauth all clients on all APs</h1>
+mdk4 wlan0mon d</p><p><h1>Deauth clients on specific AP</h1>
+mdk4 wlan0mon d -B 00:11:22:33:44:55</p><p><h1>Deauth clients on specific network name</h1>
+mdk4 wlan0mon d -E "TargetNetwork"</p><p><h1>Deauth specific client from any AP</h1>
+mdk4 wlan0mon d -S AA:BB:CC:DD:EE:FF</p><p><h1>Deauth with whitelist (protect certain devices)</h1>
+mdk4 wlan0mon d -w whitelist.txt</p><p><h1>Deauth on specific channel at high speed</h1>
+mdk4 wlan0mon d -c 6 -s 100
+</code></pre></p><p><strong>File Format for Whitelist/Blacklist</strong>:
+<pre><code><h1>Format: One MAC address per line</h1>
+00:11:22:33:44:55
+AA:BB:CC:DD:EE:FF
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing client reconnection behavior</li>
+<li>Capturing WPA handshakes for auditing</li>
+<li>Testing 802.11w (Management Frame Protection)</li>
+<li>Evaluating network resilience</li>
+</ul></p><p>---</p><p><h3>Mode p - SSID Probing</h3></p><p><strong>Purpose</strong>: Probe for hidden SSIDs and test AP responses.</p><p><strong>How it Works</strong>: Sends probe requests to discover hidden networks and test if APs are in range. Can bruteforce hidden SSIDs using wordlists.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon p
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-e <SSID>          # Target specific SSID
+-f <filename>      # Read SSIDs from file for bruteforcing
+-t <MAC>           # Target specific AP by BSSID
+-s <pps>           # Set speed in packets per second
+-b <character_set> # Use custom character set for bruteforce
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Probe for hidden networks with wordlist</h1>
+mdk4 wlan0mon p -f common_ssids.txt</p><p><h1>Probe specific AP</h1>
+mdk4 wlan0mon p -t 00:11:22:33:44:55</p><p><h1>Test if specific SSID exists</h1>
+mdk4 wlan0mon p -e "HiddenNetwork"</p><p><h1>High-speed probing</h1>
+mdk4 wlan0mon p -f wordlist.txt -s 300
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Discovering hidden networks</li>
+<li>Testing probe request handling</li>
+<li>Verifying SSID cloaking implementations</li>
+<li>Network reconnaissance</li>
+</ul></p><p>---</p><p><h3>Mode e - EAPOL Start/Logoff Packet Injection</h3></p><p><strong>Purpose</strong>: Attack WPA/WPA2 authentication process.</p><p><strong>How it Works</strong>: Floods APs with EAPOL Start frames to exhaust resources, or sends EAPOL Logoff messages to disconnect authenticated clients.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon e
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-t <BSSID>         # Target specific AP
+-s <pps>           # Set packet speed
+-l                 # Use EAPOL Logoff instead of Start
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Flood AP with EAPOL Start frames</h1>
+mdk4 wlan0mon e -t 00:11:22:33:44:55</p><p><h1>Send EAPOL Logoff to disconnect clients</h1>
+mdk4 wlan0mon e -t 00:11:22:33:44:55 -l</p><p><h1>High-speed EAPOL flood</h1>
+mdk4 wlan0mon e -s 200
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing WPA/WPA2 authentication resilience</li>
+<li>Evaluating rate limiting</li>
+<li>Testing EAPOL handling</li>
+</ul></p><p>---</p><p><h3>Mode s - Mesh Network Attacks</h3></p><p><strong>Purpose</strong>: Attack IEEE 802.11s mesh networks.</p><p><strong>How it Works</strong>: Exploits mesh network protocols by flooding neighbors and routes, creating black holes, or diverting traffic.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon s
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-f <type>          # Attack type: n=neighbor flooding, r=route flooding
+-b <BSSID>         # Target specific mesh node
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Flood mesh neighbors</h1>
+mdk4 wlan0mon s -f n</p><p><h1>Flood mesh routes</h1>
+mdk4 wlan0mon s -f r</p><p><h1>Target specific mesh node</h1>
+mdk4 wlan0mon s -b 00:11:22:33:44:55
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing mesh network security</li>
+<li>Evaluating routing protocol resilience</li>
+<li>Research on mesh vulnerabilities</li>
+</ul></p><p>---</p><p><h3>Mode w - WIDS/WIPS Confusion</h3></p><p><strong>Purpose</strong>: Confuse and abuse Wireless Intrusion Detection/Prevention Systems.</p><p><strong>How it Works</strong>: Cross-connects clients to multiple WDS nodes or creates fake rogue APs to trigger false positives in security systems.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon w
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-z                 # Activate Zero_Chaos' WIDS exploit
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Confuse WIDS systems</h1>
+mdk4 wlan0mon w</p><p><h1>Use WIDS exploit</h1>
+mdk4 wlan0mon w -z
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing WIDS/WIPS effectiveness</li>
+<li>Evaluating false positive rates</li>
+<li>Security system validation</li>
+</ul></p><p>---</p><p><h3>Mode f - Packet Fuzzer</h3></p><p><strong>Purpose</strong>: Test WiFi implementations with malformed packets.</p><p><strong>How it Works</strong>: Creates and injects fuzzy/malformed packets to test how devices handle invalid or unexpected data.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon f
+</code></pre></p><p><strong>Common Options</strong>:
+<pre><code>-s <pps>           # Set packet speed
+-t <BSSID>         # Target specific MAC
+-m <mode>          # Fuzzing mode
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Basic fuzzing</h1>
+mdk4 wlan0mon f</p><p><h1>Fuzz specific target</h1>
+mdk4 wlan0mon f -t 00:11:22:33:44:55</p><p><h1>High-speed fuzzing</h1>
+mdk4 wlan0mon f -s 500
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Finding implementation bugs</li>
+<li>Testing driver stability</li>
+<li>Security research</li>
+<li>Vulnerability discovery</li>
+</ul></p><p>---</p><p><h3>Mode x - PoC WiFi Protocol Vulnerabilities</h3></p><p><strong>Purpose</strong>: Test for known WiFi protocol implementation vulnerabilities.</p><p><strong>How it Works</strong>: Executes proof-of-concept attacks for various WiFi vulnerabilities to test if devices are affected.</p><p><strong>Basic Usage</strong>:
+<pre><code>mdk4 wlan0mon x
+</code></pre></p><p><strong>Examples</strong>:
+<pre><code><h1>Run vulnerability tests</h1>
+mdk4 wlan0mon x
+</code></pre></p><p><strong>Use Cases</strong>:
+<ul>
+<li>Testing for known CVEs</li>
+<li>Vulnerability assessment</li>
+<li>Patch verification</li>
+<li>Security auditing</li>
+</ul></p><p>---</p><p><h2>Common Options</h2></p><p><h3>General Options (Available for Most Modes)</h3></p><p><pre><code>-h                 # Show help for specific mode
+-c <channel>       # Set specific channel (1-14 for 2.4GHz, 36+ for 5GHz)
+-s <pps>           # Packets per second (speed)
+-m                 # Use valid MAC addresses from IEEE OUI database
+-v                 # Verbose mode (show more details)
+</code></pre></p><p><h3>Advanced Options</h3></p><p><pre><code>-g                 # Enable ghosting (IDS evasion)
+-p                 # Enable fragmenting (IDS evasion)
+</code></pre></p><p>---</p><p><h2>Practical Examples</h2></p><p><h3>Example 1: Capture WPA Handshake</h3>
+<pre><code><h1>Terminal 1: Deauth to force handshake</h1>
+mdk4 wlan0mon d -E "TargetNetwork" -c 6</p><p><h1>Terminal 2: Capture with airodump-ng</h1>
+airodump-ng -c 6 --bssid 00:11:22:33:44:55 -w capture wlan0mon
+</code></pre></p><p><h3>Example 2: Test Network Scanner</h3>
+<pre><code><h1>Create 100 fake APs to test scanner performance</h1>
+mdk4 wlan0mon b -s 100 -m
+</code></pre></p><p><h3>Example 3: Test WIDS System</h3>
+<pre><code><h1>Generate activity to test WIDS detection</h1>
+mdk4 wlan0mon w
+</code></pre></p><p><h3>Example 4: Discover Hidden Network</h3>
+<pre><code><h1>Create wordlist</h1>
+cat > ssids.txt << EOF
+HiddenNetwork
+SecretWiFi
+GuestNetwork
+EOF</p><p><h1>Probe for hidden SSIDs</h1>
+mdk4 wlan0mon p -f ssids.txt
+</code></pre></p><p><h3>Example 5: Test 802.11w Protection</h3>
+<pre><code><h1>Try to deauth clients (should fail if 802.11w enabled)</h1>
+mdk4 wlan0mon d -B 00:11:22:33:44:55</p><p><h1>Disable 802.11w protection in attack</h1>
+mdk4 wlan0mon d -B 00:11:22:33:44:55 -W
+</code></pre></p><p><h3>Example 6: Channel Hopping Beacon Flood</h3>
+<pre><code><h1>Create fake APs that hop channels</h1>
+mdk4 wlan0mon b -h -f ssids.txt
+</code></pre></p><p><h3>Example 7: Targeted Client Disconnection</h3>
+<pre><code><h1>Disconnect only specific client</h1>
+mdk4 wlan0mon d -S AA:BB:CC:DD:EE:FF -B 00:11:22:33:44:55
+</code></pre></p><p>---</p><p><h2>Legal Disclaimer</h2></p><p>⚠️ <strong>IMPORTANT LEGAL NOTICE</strong> ⚠️</p><p><h3>Authorization Required</h3>
+MDK4 is a powerful tool that can disrupt wireless networks. <strong>You MUST have explicit written permission</strong> from the network owner before conducting any tests.</p><p><h3>Legal Consequences</h3>
+Unauthorized use of MDK4 can result in:
+<ul>
+<li><strong>Criminal charges</strong> under Computer Fraud and Abuse Act (CFAA) or equivalent laws</li>
+<li><strong>Heavy fines</strong> (potentially hundreds of thousands of dollars)</li>
+<li><strong>Imprisonment</strong> (up to 10+ years depending on jurisdiction)</li>
+<li><strong>Civil lawsuits</strong> for damages</li>
+<li><strong>Loss of security certifications</strong></li>
+</ul></p><p><h3>Acceptable Use</h3>
+MDK4 should ONLY be used for:
+<ul>
+<li>✅ Testing YOUR OWN networks</li>
+<li>✅ Authorized penetration testing engagements (with written contracts)</li>
+<li>✅ Security research in controlled lab environments</li>
+<li>✅ Educational purposes on isolated test networks</li>
+<li>✅ CTF (Capture The Flag) competitions</li>
+<li>✅ Professional security assessments with proper authorization</li>
+</ul></p><p><h3>Unacceptable Use</h3>
+<ul>
+<li>❌ Attacking networks without permission</li>
+<li>❌ Disrupting public WiFi</li>
+<li>❌ Interfering with business operations</li>
+<li>❌ Attacking infrastructure (airports, hospitals, etc.)</li>
+<li>❌ "Testing" neighbor's WiFi</li>
+<li>❌ Any malicious or harmful activities</li>
+</ul></p><p><h3>Best Practices</h3>
+<ol>
+<li><strong>Get Written Permission</strong>: Always obtain signed authorization before testing</li>
+<li><strong>Define Scope</strong>: Clearly document what networks and times are authorized</li>
+<li><strong>Document Everything</strong>: Keep detailed logs of all testing activities</li>
+<li><strong>Use Isolated Environments</strong>: Test on dedicated equipment when possible</li>
+<li><strong>Follow Responsible Disclosure</strong>: Report vulnerabilities properly</li>
+<li><strong>Stay Updated on Laws</strong>: Wireless laws vary by country and region</li>
+</ol></p><p><h3>Disclaimer</h3>
+The authors and distributors of MDK4 are not responsible for any misuse of this tool. <strong>You are solely responsible</strong> for your actions and any consequences.</p><p>---</p><p><h2>Troubleshooting</h2></p><p><h3>Issue: "No wireless extensions" or interface not found</h3>
+<strong>Solution</strong>:
+<pre><code><h1>Check if interface exists</h1>
+iwconfig</p><p><h1>Make sure interface is in monitor mode</h1>
+sudo airmon-ng check kill
+sudo airmon-ng start wlan0
+</code></pre></p><p><h3>Issue: Packets not being injected</h3>
+<strong>Solution</strong>:
+<pre><code><h1>Test injection capability</h1>
+sudo aireplay-ng --test wlan0mon</p><p><h1>Some chipsets don't support injection</h1>
+<h1>Check if your adapter supports injection: https://www.aircrack-ng.org/doku.php?id=compatibility_drivers</h1>
+</code></pre></p><p><h3>Issue: Operation not permitted</h3>
+<strong>Solution</strong>:
+<pre><code><h1>Run with sudo</h1>
+sudo mdk4 wlan0mon d
+</code></pre></p><p><h3>Issue: Channel hopping not working</h3>
+<strong>Solution</strong>:
+<pre><code><h1>Stop processes that might interfere</h1>
+sudo airmon-ng check kill</p><p><h1>Manually set channel if needed</h1>
+sudo iwconfig wlan0mon channel 6
+</code></pre></p><p><h3>Issue: Low packet injection rate</h3>
+<strong>Solution</strong>:
+<pre><code><h1>Increase packet speed</h1>
+mdk4 wlan0mon b -s 200</p><p><h1>Check CPU usage - may be hardware limited</h1>
+<h1>Use better wireless adapter with higher injection rates</h1>
+</code></pre></p><p><h3>Issue: WIDS detecting attacks immediately</h3>
+<strong>Solution</strong>:
+<pre><code><h1>Use IDS evasion techniques</h1>
+mdk4 wlan0mon d -g      # Enable ghosting
+mdk4 wlan0mon d -p      # Enable fragmenting
+mdk4 wlan0mon d -g -p   # Use both
+</code></pre></p><p><h3>Recommended Wireless Adapters for MDK4</h3>
+<ul>
+<li><strong>Alfa AWUS036ACH</strong> (Dual-band, excellent injection)</li>
+<li><strong>Alfa AWUS036NHA</strong> (2.4GHz, reliable)</li>
+<li><strong>TP-Link TL-WN722N v1</strong> (Budget option, 2.4GHz only)</li>
+<li><strong>Panda PAU09</strong> (Good compatibility)</li>
+<li><strong>Alfa AWUS1900</strong> (High power, dual-band)</li>
+</ul></p><p><strong>Note</strong>: v2 and later versions of some adapters (like TL-WN722N) may NOT support injection. Always verify chipset.</p><p>---</p><p><h2>Additional Resources</h2></p><p><h3>Official Documentation</h3>
+<ul>
+<li>GitHub Repository: https://github.com/aircrack-ng/mdk4</li>
+<li>Aircrack-ng Suite: https://www.aircrack-ng.org/</li>
+</ul></p><p><h3>Related Tools</h3>
+<ul>
+<li><strong>Aircrack-ng</strong>: WiFi security auditing suite</li>
+<li><strong>Airodump-ng</strong>: Packet capture and analysis</li>
+<li><strong>Aireplay-ng</strong>: Packet injection</li>
+<li><strong>Wireshark</strong>: Network protocol analyzer</li>
+<li><strong>Kismet</strong>: Wireless network detector</li>
+</ul></p><p><h3>Learning Resources</h3>
+<ul>
+<li>Kali Linux Tools Documentation</li>
+<li>WiFi pentesting courses</li>
+<li>OSWP (Offensive Security Wireless Professional) certification</li>
+<li>Wireless security research papers</li>
+</ul></p><p><h3>Chipset Information</h3>
+Check if your wireless adapter supports injection:
+<ul>
+<li>https://www.aircrack-ng.org/doku.php?id=compatibility_drivers</li>
+</ul></p><p>---</p><p><h2>Quick Reference Card</h2></p><p><pre><code>ATTACK MODES:
+b - Beacon Flooding          Create fake APs
+a - Authentication DoS       Flood with auth requests
+d - Deauthentication        Disconnect clients
+p - SSID Probing            Find hidden networks
+e - EAPOL                   Attack WPA auth
+s - Mesh Networks           Attack 802.11s mesh
+w - WIDS Confusion          Confuse IDS/IPS
+f - Packet Fuzzer           Fuzz packets
+x - PoC Testing             Test vulnerabilities</p><p>COMMON OPTIONS:
+-c <channel>                Set channel
+-s <pps>                    Set speed
+-m                          Use valid MACs
+-h                          Mode-specific help</p><p>ESSENTIAL COMMANDS:
+airmon-ng start wlan0       Enable monitor mode
+iwconfig                    Check interfaces
+mdk4 --help <mode>          Get mode help
+mdk4 --fullhelp             Full help
+</code></pre></p><p>---</p><p><h2>Conclusion</h2></p><p>MDK4 is an essential tool for wireless security professionals, offering comprehensive capabilities for testing WiFi networks. Always use it responsibly and legally.</p><p><strong>Remember</strong>:
+<ul>
+<li>Always get authorization</li>
+<li>Document your testing</li>
+<li>Follow ethical guidelines</li>
+<li>Use for defensive purposes</li>
+<li>Stay within the law</li>
+</ul></p><p>---</p><p><strong>Document Version</strong>: 1.0
+<strong>Last Updated</strong>: November 2025
+<strong>MDK4 Version</strong>: 4.x
+<strong>Author</strong>: Comprehensive User Guide</p><p>---</p><p><em>This guide is for educational and authorized security testing purposes only.</em>
+
+</body>
+</html>

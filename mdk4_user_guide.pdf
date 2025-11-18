@@ -1,0 +1,1355 @@
+%PDF-1.4
+1 0 obj
+<<
+/Length 3188
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td (========================================) Tj ET
+BT /F1 9 Tf 50 728 Td (MDK4 Complete User Guide) Tj ET
+BT /F1 9 Tf 50 717 Td (========================================) Tj ET
+BT /F1 9 Tf 50 706 Td () Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td () Tj ET
+BT /F1 9 Tf 50 673 Td (--- Table of Contents ---) Tj ET
+BT /F1 9 Tf 50 662 Td (1. Introduction) Tj ET
+BT /F1 9 Tf 50 651 Td (2. Installation) Tj ET
+BT /F1 9 Tf 50 640 Td (3. Basic Syntax) Tj ET
+BT /F1 9 Tf 50 629 Td (4. Attack Modes Overview) Tj ET
+BT /F1 9 Tf 50 618 Td (5. Detailed Attack Mode Guide) Tj ET
+BT /F1 9 Tf 50 607 Td (6. Common Options) Tj ET
+BT /F1 9 Tf 50 596 Td (7. Practical Examples) Tj ET
+BT /F1 9 Tf 50 585 Td (8. Legal Disclaimer) Tj ET
+BT /F1 9 Tf 50 574 Td (9. Troubleshooting) Tj ET
+BT /F1 9 Tf 50 563 Td () Tj ET
+BT /F1 9 Tf 50 552 Td (---) Tj ET
+BT /F1 9 Tf 50 541 Td () Tj ET
+BT /F1 9 Tf 50 530 Td () Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td (--- Introduction ---) Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td (MDK4 \(Murder Death Kill 4\) is a powerful wireless security testing tool designed for ...) Tj ET
+BT /F1 9 Tf 50 475 Td () Tj ET
+BT /F1 9 Tf 50 464 Td () Tj ET
+BT /F1 9 Tf 50 453 Td ( Key Features ) Tj ET
+BT /F1 9 Tf 50 442 Td (- Modular Design: 9 different attack modes for comprehensive testing) Tj ET
+BT /F1 9 Tf 50 431 Td (- Dual-Band Support: Works with both 2.4GHz and 5GHz networks) Tj ET
+BT /F1 9 Tf 50 420 Td (- Dual Interface Support: Can use one interface for receiving and another for injecting) Tj ET
+BT /F1 9 Tf 50 409 Td (- IDS Evasion: Supports ghosting and fragmenting techniques) Tj ET
+BT /F1 9 Tf 50 398 Td (- Cross-Platform: Works on Linux, macOS, and other Unix-like systems) Tj ET
+BT /F1 9 Tf 50 387 Td (- Based on Aircrack-ng: Uses the osdep library from aircrack-ng for frame injection) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td () Tj ET
+BT /F1 9 Tf 50 354 Td ( What MDK4 is Used For ) Tj ET
+BT /F1 9 Tf 50 343 Td (- Penetration testing of wireless networks) Tj ET
+BT /F1 9 Tf 50 332 Td (- Testing wireless IDS/IPS systems) Tj ET
+BT /F1 9 Tf 50 321 Td (- Demonstrating wireless vulnerabilities) Tj ET
+BT /F1 9 Tf 50 310 Td (- Security research and education) Tj ET
+BT /F1 9 Tf 50 299 Td (- Network hardening assessments) Tj ET
+BT /F1 9 Tf 50 288 Td () Tj ET
+BT /F1 9 Tf 50 277 Td (---) Tj ET
+BT /F1 9 Tf 50 266 Td () Tj ET
+BT /F1 9 Tf 50 255 Td () Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td (--- Installation ---) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td ( Prerequisites ) Tj ET
+BT /F1 9 Tf 50 189 Td () Tj ET
+BT /F1 9 Tf 50 178 Td (========================================) Tj ET
+BT /F1 9 Tf 50 167 Td (Install required dependencies) Tj ET
+BT /F1 9 Tf 50 156 Td (========================================) Tj ET
+BT /F1 9 Tf 50 145 Td (sudo apt-get update) Tj ET
+BT /F1 9 Tf 50 134 Td (sudo apt-get install pkg-config libnl-3-dev libnl-genl-3-dev libpcap-dev build-essential) Tj ET
+BT /F1 9 Tf 50 123 Td () Tj ET
+BT /F1 9 Tf 50 112 Td () Tj ET
+BT /F1 9 Tf 50 101 Td ( Installing MDK4 ) Tj ET
+endstream
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Kids [2 0 R 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R]
+/Count 16
+>>
+endobj
+2 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 1 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+3 0 obj
+<<
+/Length 2874
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td (========================================) Tj ET
+BT /F1 9 Tf 50 728 Td (Clone the repository) Tj ET
+BT /F1 9 Tf 50 717 Td (========================================) Tj ET
+BT /F1 9 Tf 50 706 Td (git clone https://github.com/aircrack-ng/mdk4) Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td () Tj ET
+BT /F1 9 Tf 50 673 Td (========================================) Tj ET
+BT /F1 9 Tf 50 662 Td (Navigate to directory) Tj ET
+BT /F1 9 Tf 50 651 Td (========================================) Tj ET
+BT /F1 9 Tf 50 640 Td (cd mdk4) Tj ET
+BT /F1 9 Tf 50 629 Td () Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+BT /F1 9 Tf 50 607 Td (========================================) Tj ET
+BT /F1 9 Tf 50 596 Td (Compile) Tj ET
+BT /F1 9 Tf 50 585 Td (========================================) Tj ET
+BT /F1 9 Tf 50 574 Td (make) Tj ET
+BT /F1 9 Tf 50 563 Td () Tj ET
+BT /F1 9 Tf 50 552 Td () Tj ET
+BT /F1 9 Tf 50 541 Td (========================================) Tj ET
+BT /F1 9 Tf 50 530 Td (Install system-wide) Tj ET
+BT /F1 9 Tf 50 519 Td (========================================) Tj ET
+BT /F1 9 Tf 50 508 Td (sudo make install) Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td () Tj ET
+BT /F1 9 Tf 50 475 Td ( Verify Installation ) Tj ET
+BT /F1 9 Tf 50 464 Td (mdk4 --help) Tj ET
+BT /F1 9 Tf 50 453 Td () Tj ET
+BT /F1 9 Tf 50 442 Td (---) Tj ET
+BT /F1 9 Tf 50 431 Td () Tj ET
+BT /F1 9 Tf 50 420 Td () Tj ET
+BT /F1 9 Tf 50 409 Td () Tj ET
+BT /F1 9 Tf 50 398 Td (--- Basic Syntax ---) Tj ET
+BT /F1 9 Tf 50 387 Td () Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td ( Command Structure ) Tj ET
+BT /F1 9 Tf 50 354 Td (mdk4 <interface> <attack_mode> [attack_options]) Tj ET
+BT /F1 9 Tf 50 343 Td () Tj ET
+BT /F1 9 Tf 50 332 Td () Tj ET
+BT /F1 9 Tf 50 321 Td ( Dual Interface Mode ) Tj ET
+BT /F1 9 Tf 50 310 Td (mdk4 <interface_in> <interface_out> <attack_mode> [attack_options]) Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td () Tj ET
+BT /F1 9 Tf 50 277 Td ( Getting Help ) Tj ET
+BT /F1 9 Tf 50 266 Td () Tj ET
+BT /F1 9 Tf 50 255 Td (========================================) Tj ET
+BT /F1 9 Tf 50 244 Td (General help) Tj ET
+BT /F1 9 Tf 50 233 Td (========================================) Tj ET
+BT /F1 9 Tf 50 222 Td (mdk4 --help) Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td (========================================) Tj ET
+BT /F1 9 Tf 50 178 Td (Full help with all options) Tj ET
+BT /F1 9 Tf 50 167 Td (========================================) Tj ET
+BT /F1 9 Tf 50 156 Td (mdk4 --fullhelp) Tj ET
+BT /F1 9 Tf 50 145 Td () Tj ET
+BT /F1 9 Tf 50 134 Td () Tj ET
+BT /F1 9 Tf 50 123 Td (========================================) Tj ET
+BT /F1 9 Tf 50 112 Td (Help for specific attack mode) Tj ET
+BT /F1 9 Tf 50 101 Td (========================================) Tj ET
+endstream
+endobj
+4 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 3 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+5 0 obj
+<<
+/Length 3361
+>>
+stream
+BT /F1 9 Tf 50 750 Td (mdk4 --help <attack_mode>) Tj ET
+BT /F1 9 Tf 50 739 Td () Tj ET
+BT /F1 9 Tf 50 728 Td () Tj ET
+BT /F1 9 Tf 50 717 Td ( Preparing Your Wireless Interface ) Tj ET
+BT /F1 9 Tf 50 706 Td () Tj ET
+BT /F1 9 Tf 50 695 Td (========================================) Tj ET
+BT /F1 9 Tf 50 684 Td (Check wireless interfaces) Tj ET
+BT /F1 9 Tf 50 673 Td (========================================) Tj ET
+BT /F1 9 Tf 50 662 Td (iwconfig) Tj ET
+BT /F1 9 Tf 50 651 Td () Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td (========================================) Tj ET
+BT /F1 9 Tf 50 618 Td (Put interface in monitor mode) Tj ET
+BT /F1 9 Tf 50 607 Td (========================================) Tj ET
+BT /F1 9 Tf 50 596 Td (sudo airmon-ng start wlan0) Tj ET
+BT /F1 9 Tf 50 585 Td () Tj ET
+BT /F1 9 Tf 50 574 Td () Tj ET
+BT /F1 9 Tf 50 563 Td (========================================) Tj ET
+BT /F1 9 Tf 50 552 Td (Your interface will typically become wlan0mon or mon0) Tj ET
+BT /F1 9 Tf 50 541 Td (========================================) Tj ET
+BT /F1 9 Tf 50 530 Td () Tj ET
+BT /F1 9 Tf 50 519 Td (---) Tj ET
+BT /F1 9 Tf 50 508 Td () Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td () Tj ET
+BT /F1 9 Tf 50 475 Td (--- Attack Modes Overview ---) Tj ET
+BT /F1 9 Tf 50 464 Td () Tj ET
+BT /F1 9 Tf 50 453 Td (MDK4 has 9 attack modes, each designated by a single letter:) Tj ET
+BT /F1 9 Tf 50 442 Td () Tj ET
+BT /F1 9 Tf 50 431 Td ( Mode | Name | Description ) Tj ET
+BT /F1 9 Tf 50 420 Td (------|------|-------------) Tj ET
+BT /F1 9 Tf 50 409 Td ( b | Beacon Flooding | Sends beacon frames to show fake APs ) Tj ET
+BT /F1 9 Tf 50 398 Td ( a | Authentication DoS | Sends authentication frames to all APs ) Tj ET
+BT /F1 9 Tf 50 387 Td ( d | Deauthentication/Disassociation | Disconnects clients from APs ) Tj ET
+BT /F1 9 Tf 50 376 Td ( p | SSID Probing | Probes APs and bruteforces hidden SSIDs ) Tj ET
+BT /F1 9 Tf 50 365 Td ( e | EAPOL Start/Logoff | Floods AP with EAPOL frames ) Tj ET
+BT /F1 9 Tf 50 354 Td ( s | Mesh Networks | Attacks IEEE 802.11s mesh networks ) Tj ET
+BT /F1 9 Tf 50 343 Td ( w | WIDS Confusion | Confuses Wireless IDS/IPS systems ) Tj ET
+BT /F1 9 Tf 50 332 Td ( f | Packet Fuzzer | Fuzzes packets to test implementations ) Tj ET
+BT /F1 9 Tf 50 321 Td ( x | PoC Testing | Tests for WiFi protocol vulnerabilities ) Tj ET
+BT /F1 9 Tf 50 310 Td () Tj ET
+BT /F1 9 Tf 50 299 Td (---) Tj ET
+BT /F1 9 Tf 50 288 Td () Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td () Tj ET
+BT /F1 9 Tf 50 255 Td (--- Detailed Attack Mode Guide ---) Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td () Tj ET
+BT /F1 9 Tf 50 222 Td ( Mode b - Beacon Flooding ) Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td (Purpose: Creates multiple fake access points to confuse clients and network scanners.) Tj ET
+BT /F1 9 Tf 50 189 Td () Tj ET
+BT /F1 9 Tf 50 178 Td (How it Works: Sends beacon frames that make fake APs appear in WiFi scans. Can crash ne...) Tj ET
+BT /F1 9 Tf 50 167 Td () Tj ET
+BT /F1 9 Tf 50 156 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 145 Td (mdk4 wlan0mon b) Tj ET
+BT /F1 9 Tf 50 134 Td () Tj ET
+BT /F1 9 Tf 50 123 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 112 Td (-n <SSID>          # Use SSID from file \(one per line\)) Tj ET
+BT /F1 9 Tf 50 101 Td (-f <filename>      # Read SSIDs from file) Tj ET
+endstream
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 5 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+7 0 obj
+<<
+/Length 3610
+>>
+stream
+BT /F1 9 Tf 50 750 Td (-v <filename>      # Read SSIDs and create specific APs \(advanced\)) Tj ET
+BT /F1 9 Tf 50 739 Td (-t <filename>      # Read SSIDs from file and create WPA/WPA2 APs) Tj ET
+BT /F1 9 Tf 50 728 Td (-a                 # Use all possible characters in SSIDs) Tj ET
+BT /F1 9 Tf 50 717 Td (-m                 # Use valid MAC addresses from OUI database) Tj ET
+BT /F1 9 Tf 50 706 Td (-c <channel>       # Create APs on specific channel \(default: random\)) Tj ET
+BT /F1 9 Tf 50 695 Td (-s <pps>           # Set speed in packets per second \(default: 50\)) Tj ET
+BT /F1 9 Tf 50 684 Td (-h                 # Hop to channel where AP is spoofed) Tj ET
+BT /F1 9 Tf 50 673 Td (-w <encryptions>   # Specify encryption: n=None, w=WEP, t=TKIP, a=AES) Tj ET
+BT /F1 9 Tf 50 662 Td () Tj ET
+BT /F1 9 Tf 50 651 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td (========================================) Tj ET
+BT /F1 9 Tf 50 618 Td (Create random fake APs) Tj ET
+BT /F1 9 Tf 50 607 Td (========================================) Tj ET
+BT /F1 9 Tf 50 596 Td (mdk4 wlan0mon b -s 100) Tj ET
+BT /F1 9 Tf 50 585 Td () Tj ET
+BT /F1 9 Tf 50 574 Td () Tj ET
+BT /F1 9 Tf 50 563 Td (========================================) Tj ET
+BT /F1 9 Tf 50 552 Td (Create fake APs from wordlist) Tj ET
+BT /F1 9 Tf 50 541 Td (========================================) Tj ET
+BT /F1 9 Tf 50 530 Td (mdk4 wlan0mon b -f ssid_list.txt -s 200) Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td () Tj ET
+BT /F1 9 Tf 50 497 Td (========================================) Tj ET
+BT /F1 9 Tf 50 486 Td (Create WPA2 fake APs on channel 6) Tj ET
+BT /F1 9 Tf 50 475 Td (========================================) Tj ET
+BT /F1 9 Tf 50 464 Td (mdk4 wlan0mon b -f ssids.txt -c 6 -w a) Tj ET
+BT /F1 9 Tf 50 453 Td () Tj ET
+BT /F1 9 Tf 50 442 Td () Tj ET
+BT /F1 9 Tf 50 431 Td (========================================) Tj ET
+BT /F1 9 Tf 50 420 Td (Create fake APs with valid MAC addresses) Tj ET
+BT /F1 9 Tf 50 409 Td (========================================) Tj ET
+BT /F1 9 Tf 50 398 Td (mdk4 wlan0mon b -m -s 150) Tj ET
+BT /F1 9 Tf 50 387 Td () Tj ET
+BT /F1 9 Tf 50 376 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 365 Td (- Testing how network monitoring tools handle large numbers of APs) Tj ET
+BT /F1 9 Tf 50 354 Td (- Demonstrating security awareness) Tj ET
+BT /F1 9 Tf 50 343 Td (- Testing WiFi scanner applications) Tj ET
+BT /F1 9 Tf 50 332 Td (- Hiding legitimate networks in noise) Tj ET
+BT /F1 9 Tf 50 321 Td () Tj ET
+BT /F1 9 Tf 50 310 Td (---) Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td () Tj ET
+BT /F1 9 Tf 50 277 Td ( Mode a - Authentication DoS ) Tj ET
+BT /F1 9 Tf 50 266 Td () Tj ET
+BT /F1 9 Tf 50 255 Td (Purpose: Floods access points with authentication requests to consume resources.) Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td (How it Works: Sends continuous authentication frames to all detected APs, exhausting th...) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 200 Td (mdk4 wlan0mon a) Tj ET
+BT /F1 9 Tf 50 189 Td () Tj ET
+BT /F1 9 Tf 50 178 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 167 Td (-a <BSSID>         # Target specific AP by MAC address) Tj ET
+BT /F1 9 Tf 50 156 Td (-m                 # Use valid MAC addresses from OUI database) Tj ET
+BT /F1 9 Tf 50 145 Td (-i <filename>      # Read target MAC addresses from file) Tj ET
+BT /F1 9 Tf 50 134 Td (-s <pps>           # Set speed in packets per second) Tj ET
+BT /F1 9 Tf 50 123 Td () Tj ET
+BT /F1 9 Tf 50 112 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 101 Td () Tj ET
+endstream
+endobj
+8 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 7 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+9 0 obj
+<<
+/Length 3430
+>>
+stream
+BT /F1 9 Tf 50 750 Td (========================================) Tj ET
+BT /F1 9 Tf 50 739 Td (Attack all APs in range) Tj ET
+BT /F1 9 Tf 50 728 Td (========================================) Tj ET
+BT /F1 9 Tf 50 717 Td (mdk4 wlan0mon a -s 100) Tj ET
+BT /F1 9 Tf 50 706 Td () Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td (========================================) Tj ET
+BT /F1 9 Tf 50 673 Td (Attack specific AP) Tj ET
+BT /F1 9 Tf 50 662 Td (========================================) Tj ET
+BT /F1 9 Tf 50 651 Td (mdk4 wlan0mon a -a 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td () Tj ET
+BT /F1 9 Tf 50 618 Td (========================================) Tj ET
+BT /F1 9 Tf 50 607 Td (Attack APs from file) Tj ET
+BT /F1 9 Tf 50 596 Td (========================================) Tj ET
+BT /F1 9 Tf 50 585 Td (mdk4 wlan0mon a -i targets.txt -s 200) Tj ET
+BT /F1 9 Tf 50 574 Td () Tj ET
+BT /F1 9 Tf 50 563 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 552 Td (- Testing AP resilience against authentication floods) Tj ET
+BT /F1 9 Tf 50 541 Td (- Evaluating rate limiting implementations) Tj ET
+BT /F1 9 Tf 50 530 Td (- Testing failover mechanisms) Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td (---) Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td () Tj ET
+BT /F1 9 Tf 50 475 Td ( Mode d - Deauthentication/Disassociation ) Tj ET
+BT /F1 9 Tf 50 464 Td () Tj ET
+BT /F1 9 Tf 50 453 Td (Purpose: Disconnect clients from access points.) Tj ET
+BT /F1 9 Tf 50 442 Td () Tj ET
+BT /F1 9 Tf 50 431 Td (How it Works: Sends deauthentication and disassociation packets to clients, forcing the...) Tj ET
+BT /F1 9 Tf 50 420 Td () Tj ET
+BT /F1 9 Tf 50 409 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 398 Td (mdk4 wlan0mon d) Tj ET
+BT /F1 9 Tf 50 387 Td () Tj ET
+BT /F1 9 Tf 50 376 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 365 Td (-w <filename>      # Whitelist of MAC addresses \(BSSID, Client\) to NOT attack) Tj ET
+BT /F1 9 Tf 50 354 Td (-b <filename>      # Blacklist of MAC addresses to specifically attack) Tj ET
+BT /F1 9 Tf 50 343 Td (-s <pps>           # Set speed in packets per second) Tj ET
+BT /F1 9 Tf 50 332 Td (-c <channel>       # Focus on specific channel) Tj ET
+BT /F1 9 Tf 50 321 Td (-E <ESSID>         # Target specific network by name) Tj ET
+BT /F1 9 Tf 50 310 Td (-B <BSSID>         # Target specific AP by MAC address) Tj ET
+BT /F1 9 Tf 50 299 Td (-S <MAC>           # Target specific client station) Tj ET
+BT /F1 9 Tf 50 288 Td (-W                 # Disable 802.11w protection features) Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 255 Td () Tj ET
+BT /F1 9 Tf 50 244 Td (========================================) Tj ET
+BT /F1 9 Tf 50 233 Td (Deauth all clients on all APs) Tj ET
+BT /F1 9 Tf 50 222 Td (========================================) Tj ET
+BT /F1 9 Tf 50 211 Td (mdk4 wlan0mon d) Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td () Tj ET
+BT /F1 9 Tf 50 178 Td (========================================) Tj ET
+BT /F1 9 Tf 50 167 Td (Deauth clients on specific AP) Tj ET
+BT /F1 9 Tf 50 156 Td (========================================) Tj ET
+BT /F1 9 Tf 50 145 Td (mdk4 wlan0mon d -B 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 134 Td () Tj ET
+BT /F1 9 Tf 50 123 Td () Tj ET
+BT /F1 9 Tf 50 112 Td (========================================) Tj ET
+BT /F1 9 Tf 50 101 Td (Deauth clients on specific network name) Tj ET
+endstream
+endobj
+10 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 9 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+11 0 obj
+<<
+/Length 3374
+>>
+stream
+BT /F1 9 Tf 50 750 Td (========================================) Tj ET
+BT /F1 9 Tf 50 739 Td (mdk4 wlan0mon d -E "TargetNetwork") Tj ET
+BT /F1 9 Tf 50 728 Td () Tj ET
+BT /F1 9 Tf 50 717 Td () Tj ET
+BT /F1 9 Tf 50 706 Td (========================================) Tj ET
+BT /F1 9 Tf 50 695 Td (Deauth specific client from any AP) Tj ET
+BT /F1 9 Tf 50 684 Td (========================================) Tj ET
+BT /F1 9 Tf 50 673 Td (mdk4 wlan0mon d -S AA:BB:CC:DD:EE:FF) Tj ET
+BT /F1 9 Tf 50 662 Td () Tj ET
+BT /F1 9 Tf 50 651 Td () Tj ET
+BT /F1 9 Tf 50 640 Td (========================================) Tj ET
+BT /F1 9 Tf 50 629 Td (Deauth with whitelist \(protect certain devices\)) Tj ET
+BT /F1 9 Tf 50 618 Td (========================================) Tj ET
+BT /F1 9 Tf 50 607 Td (mdk4 wlan0mon d -w whitelist.txt) Tj ET
+BT /F1 9 Tf 50 596 Td () Tj ET
+BT /F1 9 Tf 50 585 Td () Tj ET
+BT /F1 9 Tf 50 574 Td (========================================) Tj ET
+BT /F1 9 Tf 50 563 Td (Deauth on specific channel at high speed) Tj ET
+BT /F1 9 Tf 50 552 Td (========================================) Tj ET
+BT /F1 9 Tf 50 541 Td (mdk4 wlan0mon d -c 6 -s 100) Tj ET
+BT /F1 9 Tf 50 530 Td () Tj ET
+BT /F1 9 Tf 50 519 Td (File Format for Whitelist/Blacklist:) Tj ET
+BT /F1 9 Tf 50 508 Td () Tj ET
+BT /F1 9 Tf 50 497 Td (========================================) Tj ET
+BT /F1 9 Tf 50 486 Td (Format: One MAC address per line) Tj ET
+BT /F1 9 Tf 50 475 Td (========================================) Tj ET
+BT /F1 9 Tf 50 464 Td (00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 453 Td (AA:BB:CC:DD:EE:FF) Tj ET
+BT /F1 9 Tf 50 442 Td () Tj ET
+BT /F1 9 Tf 50 431 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 420 Td (- Testing client reconnection behavior) Tj ET
+BT /F1 9 Tf 50 409 Td (- Capturing WPA handshakes for auditing) Tj ET
+BT /F1 9 Tf 50 398 Td (- Testing 802.11w \(Management Frame Protection\)) Tj ET
+BT /F1 9 Tf 50 387 Td (- Evaluating network resilience) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td (---) Tj ET
+BT /F1 9 Tf 50 354 Td () Tj ET
+BT /F1 9 Tf 50 343 Td () Tj ET
+BT /F1 9 Tf 50 332 Td ( Mode p - SSID Probing ) Tj ET
+BT /F1 9 Tf 50 321 Td () Tj ET
+BT /F1 9 Tf 50 310 Td (Purpose: Probe for hidden SSIDs and test AP responses.) Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td (How it Works: Sends probe requests to discover hidden networks and test if APs are in r...) Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 255 Td (mdk4 wlan0mon p) Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 222 Td (-e <SSID>          # Target specific SSID) Tj ET
+BT /F1 9 Tf 50 211 Td (-f <filename>      # Read SSIDs from file for bruteforcing) Tj ET
+BT /F1 9 Tf 50 200 Td (-t <MAC>           # Target specific AP by BSSID) Tj ET
+BT /F1 9 Tf 50 189 Td (-s <pps>           # Set speed in packets per second) Tj ET
+BT /F1 9 Tf 50 178 Td (-b <character_set> # Use custom character set for bruteforce) Tj ET
+BT /F1 9 Tf 50 167 Td () Tj ET
+BT /F1 9 Tf 50 156 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 145 Td () Tj ET
+BT /F1 9 Tf 50 134 Td (========================================) Tj ET
+BT /F1 9 Tf 50 123 Td (Probe for hidden networks with wordlist) Tj ET
+BT /F1 9 Tf 50 112 Td (========================================) Tj ET
+BT /F1 9 Tf 50 101 Td (mdk4 wlan0mon p -f common_ssids.txt) Tj ET
+endstream
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 11 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 3204
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td () Tj ET
+BT /F1 9 Tf 50 728 Td (========================================) Tj ET
+BT /F1 9 Tf 50 717 Td (Probe specific AP) Tj ET
+BT /F1 9 Tf 50 706 Td (========================================) Tj ET
+BT /F1 9 Tf 50 695 Td (mdk4 wlan0mon p -t 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 684 Td () Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td (========================================) Tj ET
+BT /F1 9 Tf 50 651 Td (Test if specific SSID exists) Tj ET
+BT /F1 9 Tf 50 640 Td (========================================) Tj ET
+BT /F1 9 Tf 50 629 Td (mdk4 wlan0mon p -e "HiddenNetwork") Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+BT /F1 9 Tf 50 607 Td () Tj ET
+BT /F1 9 Tf 50 596 Td (========================================) Tj ET
+BT /F1 9 Tf 50 585 Td (High-speed probing) Tj ET
+BT /F1 9 Tf 50 574 Td (========================================) Tj ET
+BT /F1 9 Tf 50 563 Td (mdk4 wlan0mon p -f wordlist.txt -s 300) Tj ET
+BT /F1 9 Tf 50 552 Td () Tj ET
+BT /F1 9 Tf 50 541 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 530 Td (- Discovering hidden networks) Tj ET
+BT /F1 9 Tf 50 519 Td (- Testing probe request handling) Tj ET
+BT /F1 9 Tf 50 508 Td (- Verifying SSID cloaking implementations) Tj ET
+BT /F1 9 Tf 50 497 Td (- Network reconnaissance) Tj ET
+BT /F1 9 Tf 50 486 Td () Tj ET
+BT /F1 9 Tf 50 475 Td (---) Tj ET
+BT /F1 9 Tf 50 464 Td () Tj ET
+BT /F1 9 Tf 50 453 Td () Tj ET
+BT /F1 9 Tf 50 442 Td ( Mode e - EAPOL Start/Logoff Packet Injection ) Tj ET
+BT /F1 9 Tf 50 431 Td () Tj ET
+BT /F1 9 Tf 50 420 Td (Purpose: Attack WPA/WPA2 authentication process.) Tj ET
+BT /F1 9 Tf 50 409 Td () Tj ET
+BT /F1 9 Tf 50 398 Td (How it Works: Floods APs with EAPOL Start frames to exhaust resources, or sends EAPOL L...) Tj ET
+BT /F1 9 Tf 50 387 Td () Tj ET
+BT /F1 9 Tf 50 376 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 365 Td (mdk4 wlan0mon e) Tj ET
+BT /F1 9 Tf 50 354 Td () Tj ET
+BT /F1 9 Tf 50 343 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 332 Td (-t <BSSID>         # Target specific AP) Tj ET
+BT /F1 9 Tf 50 321 Td (-s <pps>           # Set packet speed) Tj ET
+BT /F1 9 Tf 50 310 Td (-l                 # Use EAPOL Logoff instead of Start) Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td (========================================) Tj ET
+BT /F1 9 Tf 50 255 Td (Flood AP with EAPOL Start frames) Tj ET
+BT /F1 9 Tf 50 244 Td (========================================) Tj ET
+BT /F1 9 Tf 50 233 Td (mdk4 wlan0mon e -t 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td (========================================) Tj ET
+BT /F1 9 Tf 50 189 Td (Send EAPOL Logoff to disconnect clients) Tj ET
+BT /F1 9 Tf 50 178 Td (========================================) Tj ET
+BT /F1 9 Tf 50 167 Td (mdk4 wlan0mon e -t 00:11:22:33:44:55 -l) Tj ET
+BT /F1 9 Tf 50 156 Td () Tj ET
+BT /F1 9 Tf 50 145 Td () Tj ET
+BT /F1 9 Tf 50 134 Td (========================================) Tj ET
+BT /F1 9 Tf 50 123 Td (High-speed EAPOL flood) Tj ET
+BT /F1 9 Tf 50 112 Td (========================================) Tj ET
+BT /F1 9 Tf 50 101 Td (mdk4 wlan0mon e -s 200) Tj ET
+endstream
+endobj
+14 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 13 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+15 0 obj
+<<
+/Length 3085
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 728 Td (- Testing WPA/WPA2 authentication resilience) Tj ET
+BT /F1 9 Tf 50 717 Td (- Evaluating rate limiting) Tj ET
+BT /F1 9 Tf 50 706 Td (- Testing EAPOL handling) Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td (---) Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td () Tj ET
+BT /F1 9 Tf 50 651 Td ( Mode s - Mesh Network Attacks ) Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td (Purpose: Attack IEEE 802.11s mesh networks.) Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+BT /F1 9 Tf 50 607 Td (How it Works: Exploits mesh network protocols by flooding neighbors and routes, creatin...) Tj ET
+BT /F1 9 Tf 50 596 Td () Tj ET
+BT /F1 9 Tf 50 585 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 574 Td (mdk4 wlan0mon s) Tj ET
+BT /F1 9 Tf 50 563 Td () Tj ET
+BT /F1 9 Tf 50 552 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 541 Td (-f <type>          # Attack type: n=neighbor flooding, r=route flooding) Tj ET
+BT /F1 9 Tf 50 530 Td (-b <BSSID>         # Target specific mesh node) Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td (========================================) Tj ET
+BT /F1 9 Tf 50 475 Td (Flood mesh neighbors) Tj ET
+BT /F1 9 Tf 50 464 Td (========================================) Tj ET
+BT /F1 9 Tf 50 453 Td (mdk4 wlan0mon s -f n) Tj ET
+BT /F1 9 Tf 50 442 Td () Tj ET
+BT /F1 9 Tf 50 431 Td () Tj ET
+BT /F1 9 Tf 50 420 Td (========================================) Tj ET
+BT /F1 9 Tf 50 409 Td (Flood mesh routes) Tj ET
+BT /F1 9 Tf 50 398 Td (========================================) Tj ET
+BT /F1 9 Tf 50 387 Td (mdk4 wlan0mon s -f r) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td () Tj ET
+BT /F1 9 Tf 50 354 Td (========================================) Tj ET
+BT /F1 9 Tf 50 343 Td (Target specific mesh node) Tj ET
+BT /F1 9 Tf 50 332 Td (========================================) Tj ET
+BT /F1 9 Tf 50 321 Td (mdk4 wlan0mon s -b 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 310 Td () Tj ET
+BT /F1 9 Tf 50 299 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 288 Td (- Testing mesh network security) Tj ET
+BT /F1 9 Tf 50 277 Td (- Evaluating routing protocol resilience) Tj ET
+BT /F1 9 Tf 50 266 Td (- Research on mesh vulnerabilities) Tj ET
+BT /F1 9 Tf 50 255 Td () Tj ET
+BT /F1 9 Tf 50 244 Td (---) Tj ET
+BT /F1 9 Tf 50 233 Td () Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td ( Mode w - WIDS/WIPS Confusion ) Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td (Purpose: Confuse and abuse Wireless Intrusion Detection/Prevention Systems.) Tj ET
+BT /F1 9 Tf 50 178 Td () Tj ET
+BT /F1 9 Tf 50 167 Td (How it Works: Cross-connects clients to multiple WDS nodes or creates fake rogue APs to...) Tj ET
+BT /F1 9 Tf 50 156 Td () Tj ET
+BT /F1 9 Tf 50 145 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 134 Td (mdk4 wlan0mon w) Tj ET
+BT /F1 9 Tf 50 123 Td () Tj ET
+BT /F1 9 Tf 50 112 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 101 Td (-z                 # Activate Zero_Chaos' WIDS exploit) Tj ET
+endstream
+endobj
+16 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 15 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+17 0 obj
+<<
+/Length 3010
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 728 Td () Tj ET
+BT /F1 9 Tf 50 717 Td (========================================) Tj ET
+BT /F1 9 Tf 50 706 Td (Confuse WIDS systems) Tj ET
+BT /F1 9 Tf 50 695 Td (========================================) Tj ET
+BT /F1 9 Tf 50 684 Td (mdk4 wlan0mon w) Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td () Tj ET
+BT /F1 9 Tf 50 651 Td (========================================) Tj ET
+BT /F1 9 Tf 50 640 Td (Use WIDS exploit) Tj ET
+BT /F1 9 Tf 50 629 Td (========================================) Tj ET
+BT /F1 9 Tf 50 618 Td (mdk4 wlan0mon w -z) Tj ET
+BT /F1 9 Tf 50 607 Td () Tj ET
+BT /F1 9 Tf 50 596 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 585 Td (- Testing WIDS/WIPS effectiveness) Tj ET
+BT /F1 9 Tf 50 574 Td (- Evaluating false positive rates) Tj ET
+BT /F1 9 Tf 50 563 Td (- Security system validation) Tj ET
+BT /F1 9 Tf 50 552 Td () Tj ET
+BT /F1 9 Tf 50 541 Td (---) Tj ET
+BT /F1 9 Tf 50 530 Td () Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td ( Mode f - Packet Fuzzer ) Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td (Purpose: Test WiFi implementations with malformed packets.) Tj ET
+BT /F1 9 Tf 50 475 Td () Tj ET
+BT /F1 9 Tf 50 464 Td (How it Works: Creates and injects fuzzy/malformed packets to test how devices handle in...) Tj ET
+BT /F1 9 Tf 50 453 Td () Tj ET
+BT /F1 9 Tf 50 442 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 431 Td (mdk4 wlan0mon f) Tj ET
+BT /F1 9 Tf 50 420 Td () Tj ET
+BT /F1 9 Tf 50 409 Td (Common Options:) Tj ET
+BT /F1 9 Tf 50 398 Td (-s <pps>           # Set packet speed) Tj ET
+BT /F1 9 Tf 50 387 Td (-t <BSSID>         # Target specific MAC) Tj ET
+BT /F1 9 Tf 50 376 Td (-m <mode>          # Fuzzing mode) Tj ET
+BT /F1 9 Tf 50 365 Td () Tj ET
+BT /F1 9 Tf 50 354 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 343 Td () Tj ET
+BT /F1 9 Tf 50 332 Td (========================================) Tj ET
+BT /F1 9 Tf 50 321 Td (Basic fuzzing) Tj ET
+BT /F1 9 Tf 50 310 Td (========================================) Tj ET
+BT /F1 9 Tf 50 299 Td (mdk4 wlan0mon f) Tj ET
+BT /F1 9 Tf 50 288 Td () Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td (========================================) Tj ET
+BT /F1 9 Tf 50 255 Td (Fuzz specific target) Tj ET
+BT /F1 9 Tf 50 244 Td (========================================) Tj ET
+BT /F1 9 Tf 50 233 Td (mdk4 wlan0mon f -t 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td (========================================) Tj ET
+BT /F1 9 Tf 50 189 Td (High-speed fuzzing) Tj ET
+BT /F1 9 Tf 50 178 Td (========================================) Tj ET
+BT /F1 9 Tf 50 167 Td (mdk4 wlan0mon f -s 500) Tj ET
+BT /F1 9 Tf 50 156 Td () Tj ET
+BT /F1 9 Tf 50 145 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 134 Td (- Finding implementation bugs) Tj ET
+BT /F1 9 Tf 50 123 Td (- Testing driver stability) Tj ET
+BT /F1 9 Tf 50 112 Td (- Security research) Tj ET
+BT /F1 9 Tf 50 101 Td (- Vulnerability discovery) Tj ET
+endstream
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 17 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 3027
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td (---) Tj ET
+BT /F1 9 Tf 50 728 Td () Tj ET
+BT /F1 9 Tf 50 717 Td () Tj ET
+BT /F1 9 Tf 50 706 Td ( Mode x - PoC WiFi Protocol Vulnerabilities ) Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td (Purpose: Test for known WiFi protocol implementation vulnerabilities.) Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td (How it Works: Executes proof-of-concept attacks for various WiFi vulnerabilities to tes...) Tj ET
+BT /F1 9 Tf 50 651 Td () Tj ET
+BT /F1 9 Tf 50 640 Td (Basic Usage:) Tj ET
+BT /F1 9 Tf 50 629 Td (mdk4 wlan0mon x) Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+BT /F1 9 Tf 50 607 Td (Examples:) Tj ET
+BT /F1 9 Tf 50 596 Td () Tj ET
+BT /F1 9 Tf 50 585 Td (========================================) Tj ET
+BT /F1 9 Tf 50 574 Td (Run vulnerability tests) Tj ET
+BT /F1 9 Tf 50 563 Td (========================================) Tj ET
+BT /F1 9 Tf 50 552 Td (mdk4 wlan0mon x) Tj ET
+BT /F1 9 Tf 50 541 Td () Tj ET
+BT /F1 9 Tf 50 530 Td (Use Cases:) Tj ET
+BT /F1 9 Tf 50 519 Td (- Testing for known CVEs) Tj ET
+BT /F1 9 Tf 50 508 Td (- Vulnerability assessment) Tj ET
+BT /F1 9 Tf 50 497 Td (- Patch verification) Tj ET
+BT /F1 9 Tf 50 486 Td (- Security auditing) Tj ET
+BT /F1 9 Tf 50 475 Td () Tj ET
+BT /F1 9 Tf 50 464 Td (---) Tj ET
+BT /F1 9 Tf 50 453 Td () Tj ET
+BT /F1 9 Tf 50 442 Td () Tj ET
+BT /F1 9 Tf 50 431 Td () Tj ET
+BT /F1 9 Tf 50 420 Td (--- Common Options ---) Tj ET
+BT /F1 9 Tf 50 409 Td () Tj ET
+BT /F1 9 Tf 50 398 Td () Tj ET
+BT /F1 9 Tf 50 387 Td ( General Options \(Available for Most Modes\) ) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td (-h                 # Show help for specific mode) Tj ET
+BT /F1 9 Tf 50 354 Td (-c <channel>       # Set specific channel \(1-14 for 2.4GHz, 36+ for 5GHz\)) Tj ET
+BT /F1 9 Tf 50 343 Td (-s <pps>           # Packets per second \(speed\)) Tj ET
+BT /F1 9 Tf 50 332 Td (-m                 # Use valid MAC addresses from IEEE OUI database) Tj ET
+BT /F1 9 Tf 50 321 Td (-v                 # Verbose mode \(show more details\)) Tj ET
+BT /F1 9 Tf 50 310 Td () Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td ( Advanced Options ) Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td (-g                 # Enable ghosting \(IDS evasion\)) Tj ET
+BT /F1 9 Tf 50 255 Td (-p                 # Enable fragmenting \(IDS evasion\)) Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td (---) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td (--- Practical Examples ---) Tj ET
+BT /F1 9 Tf 50 178 Td () Tj ET
+BT /F1 9 Tf 50 167 Td () Tj ET
+BT /F1 9 Tf 50 156 Td ( Example 1: Capture WPA Handshake ) Tj ET
+BT /F1 9 Tf 50 145 Td () Tj ET
+BT /F1 9 Tf 50 134 Td (========================================) Tj ET
+BT /F1 9 Tf 50 123 Td (Terminal 1: Deauth to force handshake) Tj ET
+BT /F1 9 Tf 50 112 Td (========================================) Tj ET
+BT /F1 9 Tf 50 101 Td (mdk4 wlan0mon d -E "TargetNetwork" -c 6) Tj ET
+endstream
+endobj
+20 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 19 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+21 0 obj
+<<
+/Length 3184
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td () Tj ET
+BT /F1 9 Tf 50 728 Td (========================================) Tj ET
+BT /F1 9 Tf 50 717 Td (Terminal 2: Capture with airodump-ng) Tj ET
+BT /F1 9 Tf 50 706 Td (========================================) Tj ET
+BT /F1 9 Tf 50 695 Td (airodump-ng -c 6 --bssid 00:11:22:33:44:55 -w capture wlan0mon) Tj ET
+BT /F1 9 Tf 50 684 Td () Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td ( Example 2: Test Network Scanner ) Tj ET
+BT /F1 9 Tf 50 651 Td () Tj ET
+BT /F1 9 Tf 50 640 Td (========================================) Tj ET
+BT /F1 9 Tf 50 629 Td (Create 100 fake APs to test scanner performance) Tj ET
+BT /F1 9 Tf 50 618 Td (========================================) Tj ET
+BT /F1 9 Tf 50 607 Td (mdk4 wlan0mon b -s 100 -m) Tj ET
+BT /F1 9 Tf 50 596 Td () Tj ET
+BT /F1 9 Tf 50 585 Td () Tj ET
+BT /F1 9 Tf 50 574 Td ( Example 3: Test WIDS System ) Tj ET
+BT /F1 9 Tf 50 563 Td () Tj ET
+BT /F1 9 Tf 50 552 Td (========================================) Tj ET
+BT /F1 9 Tf 50 541 Td (Generate activity to test WIDS detection) Tj ET
+BT /F1 9 Tf 50 530 Td (========================================) Tj ET
+BT /F1 9 Tf 50 519 Td (mdk4 wlan0mon w) Tj ET
+BT /F1 9 Tf 50 508 Td () Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td ( Example 4: Discover Hidden Network ) Tj ET
+BT /F1 9 Tf 50 475 Td () Tj ET
+BT /F1 9 Tf 50 464 Td (========================================) Tj ET
+BT /F1 9 Tf 50 453 Td (Create wordlist) Tj ET
+BT /F1 9 Tf 50 442 Td (========================================) Tj ET
+BT /F1 9 Tf 50 431 Td (cat > ssids.txt << EOF) Tj ET
+BT /F1 9 Tf 50 420 Td (HiddenNetwork) Tj ET
+BT /F1 9 Tf 50 409 Td (SecretWiFi) Tj ET
+BT /F1 9 Tf 50 398 Td (GuestNetwork) Tj ET
+BT /F1 9 Tf 50 387 Td (EOF) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td () Tj ET
+BT /F1 9 Tf 50 354 Td (========================================) Tj ET
+BT /F1 9 Tf 50 343 Td (Probe for hidden SSIDs) Tj ET
+BT /F1 9 Tf 50 332 Td (========================================) Tj ET
+BT /F1 9 Tf 50 321 Td (mdk4 wlan0mon p -f ssids.txt) Tj ET
+BT /F1 9 Tf 50 310 Td () Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td ( Example 5: Test 802.11w Protection ) Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td (========================================) Tj ET
+BT /F1 9 Tf 50 255 Td (Try to deauth clients \(should fail if 802.11w enabled\)) Tj ET
+BT /F1 9 Tf 50 244 Td (========================================) Tj ET
+BT /F1 9 Tf 50 233 Td (mdk4 wlan0mon d -B 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td (========================================) Tj ET
+BT /F1 9 Tf 50 189 Td (Disable 802.11w protection in attack) Tj ET
+BT /F1 9 Tf 50 178 Td (========================================) Tj ET
+BT /F1 9 Tf 50 167 Td (mdk4 wlan0mon d -B 00:11:22:33:44:55 -W) Tj ET
+BT /F1 9 Tf 50 156 Td () Tj ET
+BT /F1 9 Tf 50 145 Td () Tj ET
+BT /F1 9 Tf 50 134 Td ( Example 6: Channel Hopping Beacon Flood ) Tj ET
+BT /F1 9 Tf 50 123 Td () Tj ET
+BT /F1 9 Tf 50 112 Td (========================================) Tj ET
+BT /F1 9 Tf 50 101 Td (Create fake APs that hop channels) Tj ET
+endstream
+endobj
+22 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 21 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+23 0 obj
+<<
+/Length 3669
+>>
+stream
+BT /F1 9 Tf 50 750 Td (========================================) Tj ET
+BT /F1 9 Tf 50 739 Td (mdk4 wlan0mon b -h -f ssids.txt) Tj ET
+BT /F1 9 Tf 50 728 Td () Tj ET
+BT /F1 9 Tf 50 717 Td () Tj ET
+BT /F1 9 Tf 50 706 Td ( Example 7: Targeted Client Disconnection ) Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td (========================================) Tj ET
+BT /F1 9 Tf 50 673 Td (Disconnect only specific client) Tj ET
+BT /F1 9 Tf 50 662 Td (========================================) Tj ET
+BT /F1 9 Tf 50 651 Td (mdk4 wlan0mon d -S AA:BB:CC:DD:EE:FF -B 00:11:22:33:44:55) Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td (---) Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+BT /F1 9 Tf 50 607 Td () Tj ET
+BT /F1 9 Tf 50 596 Td () Tj ET
+BT /F1 9 Tf 50 585 Td (--- Legal Disclaimer ---) Tj ET
+BT /F1 9 Tf 50 574 Td () Tj ET
+BT /F1 9 Tf 50 563 Td (?? IMPORTANT LEGAL NOTICE ??) Tj ET
+BT /F1 9 Tf 50 552 Td () Tj ET
+BT /F1 9 Tf 50 541 Td () Tj ET
+BT /F1 9 Tf 50 530 Td ( Authorization Required ) Tj ET
+BT /F1 9 Tf 50 519 Td (MDK4 is a powerful tool that can disrupt wireless networks. You MUST have explicit writ...) Tj ET
+BT /F1 9 Tf 50 508 Td () Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td ( Legal Consequences ) Tj ET
+BT /F1 9 Tf 50 475 Td (Unauthorized use of MDK4 can result in:) Tj ET
+BT /F1 9 Tf 50 464 Td (- Criminal charges under Computer Fraud and Abuse Act \(CFAA\) or equivalent laws) Tj ET
+BT /F1 9 Tf 50 453 Td (- Heavy fines \(potentially hundreds of thousands of dollars\)) Tj ET
+BT /F1 9 Tf 50 442 Td (- Imprisonment \(up to 10+ years depending on jurisdiction\)) Tj ET
+BT /F1 9 Tf 50 431 Td (- Civil lawsuits for damages) Tj ET
+BT /F1 9 Tf 50 420 Td (- Loss of security certifications) Tj ET
+BT /F1 9 Tf 50 409 Td () Tj ET
+BT /F1 9 Tf 50 398 Td () Tj ET
+BT /F1 9 Tf 50 387 Td ( Acceptable Use ) Tj ET
+BT /F1 9 Tf 50 376 Td (MDK4 should ONLY be used for:) Tj ET
+BT /F1 9 Tf 50 365 Td (- ? Testing YOUR OWN networks) Tj ET
+BT /F1 9 Tf 50 354 Td (- ? Authorized penetration testing engagements \(with written contracts\)) Tj ET
+BT /F1 9 Tf 50 343 Td (- ? Security research in controlled lab environments) Tj ET
+BT /F1 9 Tf 50 332 Td (- ? Educational purposes on isolated test networks) Tj ET
+BT /F1 9 Tf 50 321 Td (- ? CTF \(Capture The Flag\) competitions) Tj ET
+BT /F1 9 Tf 50 310 Td (- ? Professional security assessments with proper authorization) Tj ET
+BT /F1 9 Tf 50 299 Td () Tj ET
+BT /F1 9 Tf 50 288 Td () Tj ET
+BT /F1 9 Tf 50 277 Td ( Unacceptable Use ) Tj ET
+BT /F1 9 Tf 50 266 Td (- ? Attacking networks without permission) Tj ET
+BT /F1 9 Tf 50 255 Td (- ? Disrupting public WiFi) Tj ET
+BT /F1 9 Tf 50 244 Td (- ? Interfering with business operations) Tj ET
+BT /F1 9 Tf 50 233 Td (- ? Attacking infrastructure \(airports, hospitals, etc.\)) Tj ET
+BT /F1 9 Tf 50 222 Td (- ? "Testing" neighbor's WiFi) Tj ET
+BT /F1 9 Tf 50 211 Td (- ? Any malicious or harmful activities) Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td () Tj ET
+BT /F1 9 Tf 50 178 Td ( Best Practices ) Tj ET
+BT /F1 9 Tf 50 167 Td (1. Get Written Permission: Always obtain signed authorization before testing) Tj ET
+BT /F1 9 Tf 50 156 Td (2. Define Scope: Clearly document what networks and times are authorized) Tj ET
+BT /F1 9 Tf 50 145 Td (3. Document Everything: Keep detailed logs of all testing activities) Tj ET
+BT /F1 9 Tf 50 134 Td (4. Use Isolated Environments: Test on dedicated equipment when possible) Tj ET
+BT /F1 9 Tf 50 123 Td (5. Follow Responsible Disclosure: Report vulnerabilities properly) Tj ET
+BT /F1 9 Tf 50 112 Td (6. Stay Updated on Laws: Wireless laws vary by country and region) Tj ET
+BT /F1 9 Tf 50 101 Td () Tj ET
+endstream
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 23 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+25 0 obj
+<<
+/Length 3116
+>>
+stream
+BT /F1 9 Tf 50 750 Td () Tj ET
+BT /F1 9 Tf 50 739 Td ( Disclaimer ) Tj ET
+BT /F1 9 Tf 50 728 Td (The authors and distributors of MDK4 are not responsible for any misuse of this tool. Y...) Tj ET
+BT /F1 9 Tf 50 717 Td () Tj ET
+BT /F1 9 Tf 50 706 Td (---) Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td () Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td (--- Troubleshooting ---) Tj ET
+BT /F1 9 Tf 50 651 Td () Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td ( Issue: "No wireless extensions" or interface not found ) Tj ET
+BT /F1 9 Tf 50 618 Td (Solution:) Tj ET
+BT /F1 9 Tf 50 607 Td () Tj ET
+BT /F1 9 Tf 50 596 Td (========================================) Tj ET
+BT /F1 9 Tf 50 585 Td (Check if interface exists) Tj ET
+BT /F1 9 Tf 50 574 Td (========================================) Tj ET
+BT /F1 9 Tf 50 563 Td (iwconfig) Tj ET
+BT /F1 9 Tf 50 552 Td () Tj ET
+BT /F1 9 Tf 50 541 Td () Tj ET
+BT /F1 9 Tf 50 530 Td (========================================) Tj ET
+BT /F1 9 Tf 50 519 Td (Make sure interface is in monitor mode) Tj ET
+BT /F1 9 Tf 50 508 Td (========================================) Tj ET
+BT /F1 9 Tf 50 497 Td (sudo airmon-ng check kill) Tj ET
+BT /F1 9 Tf 50 486 Td (sudo airmon-ng start wlan0) Tj ET
+BT /F1 9 Tf 50 475 Td () Tj ET
+BT /F1 9 Tf 50 464 Td () Tj ET
+BT /F1 9 Tf 50 453 Td ( Issue: Packets not being injected ) Tj ET
+BT /F1 9 Tf 50 442 Td (Solution:) Tj ET
+BT /F1 9 Tf 50 431 Td () Tj ET
+BT /F1 9 Tf 50 420 Td (========================================) Tj ET
+BT /F1 9 Tf 50 409 Td (Test injection capability) Tj ET
+BT /F1 9 Tf 50 398 Td (========================================) Tj ET
+BT /F1 9 Tf 50 387 Td (sudo aireplay-ng --test wlan0mon) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td () Tj ET
+BT /F1 9 Tf 50 354 Td (========================================) Tj ET
+BT /F1 9 Tf 50 343 Td (Some chipsets don't support injection) Tj ET
+BT /F1 9 Tf 50 332 Td (========================================) Tj ET
+BT /F1 9 Tf 50 321 Td () Tj ET
+BT /F1 9 Tf 50 310 Td (========================================) Tj ET
+BT /F1 9 Tf 50 299 Td (Check if your adapter supports injection: https://www.aircrack-ng.org/doku.php?id=compa...) Tj ET
+BT /F1 9 Tf 50 288 Td (========================================) Tj ET
+BT /F1 9 Tf 50 277 Td () Tj ET
+BT /F1 9 Tf 50 266 Td () Tj ET
+BT /F1 9 Tf 50 255 Td ( Issue: Operation not permitted ) Tj ET
+BT /F1 9 Tf 50 244 Td (Solution:) Tj ET
+BT /F1 9 Tf 50 233 Td () Tj ET
+BT /F1 9 Tf 50 222 Td (========================================) Tj ET
+BT /F1 9 Tf 50 211 Td (Run with sudo) Tj ET
+BT /F1 9 Tf 50 200 Td (========================================) Tj ET
+BT /F1 9 Tf 50 189 Td (sudo mdk4 wlan0mon d) Tj ET
+BT /F1 9 Tf 50 178 Td () Tj ET
+BT /F1 9 Tf 50 167 Td () Tj ET
+BT /F1 9 Tf 50 156 Td ( Issue: Channel hopping not working ) Tj ET
+BT /F1 9 Tf 50 145 Td (Solution:) Tj ET
+BT /F1 9 Tf 50 134 Td () Tj ET
+BT /F1 9 Tf 50 123 Td (========================================) Tj ET
+BT /F1 9 Tf 50 112 Td (Stop processes that might interfere) Tj ET
+BT /F1 9 Tf 50 101 Td (========================================) Tj ET
+endstream
+endobj
+26 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 25 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+27 0 obj
+<<
+/Length 3250
+>>
+stream
+BT /F1 9 Tf 50 750 Td (sudo airmon-ng check kill) Tj ET
+BT /F1 9 Tf 50 739 Td () Tj ET
+BT /F1 9 Tf 50 728 Td () Tj ET
+BT /F1 9 Tf 50 717 Td (========================================) Tj ET
+BT /F1 9 Tf 50 706 Td (Manually set channel if needed) Tj ET
+BT /F1 9 Tf 50 695 Td (========================================) Tj ET
+BT /F1 9 Tf 50 684 Td (sudo iwconfig wlan0mon channel 6) Tj ET
+BT /F1 9 Tf 50 673 Td () Tj ET
+BT /F1 9 Tf 50 662 Td () Tj ET
+BT /F1 9 Tf 50 651 Td ( Issue: Low packet injection rate ) Tj ET
+BT /F1 9 Tf 50 640 Td (Solution:) Tj ET
+BT /F1 9 Tf 50 629 Td () Tj ET
+BT /F1 9 Tf 50 618 Td (========================================) Tj ET
+BT /F1 9 Tf 50 607 Td (Increase packet speed) Tj ET
+BT /F1 9 Tf 50 596 Td (========================================) Tj ET
+BT /F1 9 Tf 50 585 Td (mdk4 wlan0mon b -s 200) Tj ET
+BT /F1 9 Tf 50 574 Td () Tj ET
+BT /F1 9 Tf 50 563 Td () Tj ET
+BT /F1 9 Tf 50 552 Td (========================================) Tj ET
+BT /F1 9 Tf 50 541 Td (Check CPU usage - may be hardware limited) Tj ET
+BT /F1 9 Tf 50 530 Td (========================================) Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td (========================================) Tj ET
+BT /F1 9 Tf 50 497 Td (Use better wireless adapter with higher injection rates) Tj ET
+BT /F1 9 Tf 50 486 Td (========================================) Tj ET
+BT /F1 9 Tf 50 475 Td () Tj ET
+BT /F1 9 Tf 50 464 Td () Tj ET
+BT /F1 9 Tf 50 453 Td ( Issue: WIDS detecting attacks immediately ) Tj ET
+BT /F1 9 Tf 50 442 Td (Solution:) Tj ET
+BT /F1 9 Tf 50 431 Td () Tj ET
+BT /F1 9 Tf 50 420 Td (========================================) Tj ET
+BT /F1 9 Tf 50 409 Td (Use IDS evasion techniques) Tj ET
+BT /F1 9 Tf 50 398 Td (========================================) Tj ET
+BT /F1 9 Tf 50 387 Td (mdk4 wlan0mon d -g      # Enable ghosting) Tj ET
+BT /F1 9 Tf 50 376 Td (mdk4 wlan0mon d -p      # Enable fragmenting) Tj ET
+BT /F1 9 Tf 50 365 Td (mdk4 wlan0mon d -g -p   # Use both) Tj ET
+BT /F1 9 Tf 50 354 Td () Tj ET
+BT /F1 9 Tf 50 343 Td () Tj ET
+BT /F1 9 Tf 50 332 Td ( Recommended Wireless Adapters for MDK4 ) Tj ET
+BT /F1 9 Tf 50 321 Td (- Alfa AWUS036ACH \(Dual-band, excellent injection\)) Tj ET
+BT /F1 9 Tf 50 310 Td (- Alfa AWUS036NHA \(2.4GHz, reliable\)) Tj ET
+BT /F1 9 Tf 50 299 Td (- TP-Link TL-WN722N v1 \(Budget option, 2.4GHz only\)) Tj ET
+BT /F1 9 Tf 50 288 Td (- Panda PAU09 \(Good compatibility\)) Tj ET
+BT /F1 9 Tf 50 277 Td (- Alfa AWUS1900 \(High power, dual-band\)) Tj ET
+BT /F1 9 Tf 50 266 Td () Tj ET
+BT /F1 9 Tf 50 255 Td (Note: v2 and later versions of some adapters \(like TL-WN722N\) may NOT support injecti...) Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td (---) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td (--- Additional Resources ---) Tj ET
+BT /F1 9 Tf 50 178 Td () Tj ET
+BT /F1 9 Tf 50 167 Td () Tj ET
+BT /F1 9 Tf 50 156 Td ( Official Documentation ) Tj ET
+BT /F1 9 Tf 50 145 Td (- GitHub Repository: https://github.com/aircrack-ng/mdk4) Tj ET
+BT /F1 9 Tf 50 134 Td (- Aircrack-ng Suite: https://www.aircrack-ng.org/) Tj ET
+BT /F1 9 Tf 50 123 Td () Tj ET
+BT /F1 9 Tf 50 112 Td () Tj ET
+BT /F1 9 Tf 50 101 Td ( Related Tools ) Tj ET
+endstream
+endobj
+28 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 27 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+29 0 obj
+<<
+/Length 3406
+>>
+stream
+BT /F1 9 Tf 50 750 Td (- Aircrack-ng: WiFi security auditing suite) Tj ET
+BT /F1 9 Tf 50 739 Td (- Airodump-ng: Packet capture and analysis) Tj ET
+BT /F1 9 Tf 50 728 Td (- Aireplay-ng: Packet injection) Tj ET
+BT /F1 9 Tf 50 717 Td (- Wireshark: Network protocol analyzer) Tj ET
+BT /F1 9 Tf 50 706 Td (- Kismet: Wireless network detector) Tj ET
+BT /F1 9 Tf 50 695 Td () Tj ET
+BT /F1 9 Tf 50 684 Td () Tj ET
+BT /F1 9 Tf 50 673 Td ( Learning Resources ) Tj ET
+BT /F1 9 Tf 50 662 Td (- Kali Linux Tools Documentation) Tj ET
+BT /F1 9 Tf 50 651 Td (- WiFi pentesting courses) Tj ET
+BT /F1 9 Tf 50 640 Td (- OSWP \(Offensive Security Wireless Professional\) certification) Tj ET
+BT /F1 9 Tf 50 629 Td (- Wireless security research papers) Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+BT /F1 9 Tf 50 607 Td () Tj ET
+BT /F1 9 Tf 50 596 Td ( Chipset Information ) Tj ET
+BT /F1 9 Tf 50 585 Td (Check if your wireless adapter supports injection:) Tj ET
+BT /F1 9 Tf 50 574 Td (- https://www.aircrack-ng.org/doku.php?id=compatibility_drivers) Tj ET
+BT /F1 9 Tf 50 563 Td () Tj ET
+BT /F1 9 Tf 50 552 Td (---) Tj ET
+BT /F1 9 Tf 50 541 Td () Tj ET
+BT /F1 9 Tf 50 530 Td () Tj ET
+BT /F1 9 Tf 50 519 Td () Tj ET
+BT /F1 9 Tf 50 508 Td (--- Quick Reference Card ---) Tj ET
+BT /F1 9 Tf 50 497 Td () Tj ET
+BT /F1 9 Tf 50 486 Td (ATTACK MODES:) Tj ET
+BT /F1 9 Tf 50 475 Td (b - Beacon Flooding          Create fake APs) Tj ET
+BT /F1 9 Tf 50 464 Td (a - Authentication DoS       Flood with auth requests) Tj ET
+BT /F1 9 Tf 50 453 Td (d - Deauthentication        Disconnect clients) Tj ET
+BT /F1 9 Tf 50 442 Td (p - SSID Probing            Find hidden networks) Tj ET
+BT /F1 9 Tf 50 431 Td (e - EAPOL                   Attack WPA auth) Tj ET
+BT /F1 9 Tf 50 420 Td (s - Mesh Networks           Attack 802.11s mesh) Tj ET
+BT /F1 9 Tf 50 409 Td (w - WIDS Confusion          Confuse IDS/IPS) Tj ET
+BT /F1 9 Tf 50 398 Td (f - Packet Fuzzer           Fuzz packets) Tj ET
+BT /F1 9 Tf 50 387 Td (x - PoC Testing             Test vulnerabilities) Tj ET
+BT /F1 9 Tf 50 376 Td () Tj ET
+BT /F1 9 Tf 50 365 Td (COMMON OPTIONS:) Tj ET
+BT /F1 9 Tf 50 354 Td (-c <channel>                Set channel) Tj ET
+BT /F1 9 Tf 50 343 Td (-s <pps>                    Set speed) Tj ET
+BT /F1 9 Tf 50 332 Td (-m                          Use valid MACs) Tj ET
+BT /F1 9 Tf 50 321 Td (-h                          Mode-specific help) Tj ET
+BT /F1 9 Tf 50 310 Td () Tj ET
+BT /F1 9 Tf 50 299 Td (ESSENTIAL COMMANDS:) Tj ET
+BT /F1 9 Tf 50 288 Td (airmon-ng start wlan0       Enable monitor mode) Tj ET
+BT /F1 9 Tf 50 277 Td (iwconfig                    Check interfaces) Tj ET
+BT /F1 9 Tf 50 266 Td (mdk4 --help <mode>          Get mode help) Tj ET
+BT /F1 9 Tf 50 255 Td (mdk4 --fullhelp             Full help) Tj ET
+BT /F1 9 Tf 50 244 Td () Tj ET
+BT /F1 9 Tf 50 233 Td (---) Tj ET
+BT /F1 9 Tf 50 222 Td () Tj ET
+BT /F1 9 Tf 50 211 Td () Tj ET
+BT /F1 9 Tf 50 200 Td () Tj ET
+BT /F1 9 Tf 50 189 Td (--- Conclusion ---) Tj ET
+BT /F1 9 Tf 50 178 Td () Tj ET
+BT /F1 9 Tf 50 167 Td (MDK4 is an essential tool for wireless security professionals, offering comprehensive c...) Tj ET
+BT /F1 9 Tf 50 156 Td () Tj ET
+BT /F1 9 Tf 50 145 Td (Remember:) Tj ET
+BT /F1 9 Tf 50 134 Td (- Always get authorization) Tj ET
+BT /F1 9 Tf 50 123 Td (- Document your testing) Tj ET
+BT /F1 9 Tf 50 112 Td (- Follow ethical guidelines) Tj ET
+BT /F1 9 Tf 50 101 Td (- Use for defensive purposes) Tj ET
+endstream
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 29 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+31 0 obj
+<<
+/Length 602
+>>
+stream
+BT /F1 9 Tf 50 750 Td (- Stay within the law) Tj ET
+BT /F1 9 Tf 50 739 Td () Tj ET
+BT /F1 9 Tf 50 728 Td (---) Tj ET
+BT /F1 9 Tf 50 717 Td () Tj ET
+BT /F1 9 Tf 50 706 Td (Document Version: 1.0) Tj ET
+BT /F1 9 Tf 50 695 Td (Last Updated: November 2025) Tj ET
+BT /F1 9 Tf 50 684 Td (MDK4 Version: 4.x) Tj ET
+BT /F1 9 Tf 50 673 Td (Author: Comprehensive User Guide) Tj ET
+BT /F1 9 Tf 50 662 Td () Tj ET
+BT /F1 9 Tf 50 651 Td (---) Tj ET
+BT /F1 9 Tf 50 640 Td () Tj ET
+BT /F1 9 Tf 50 629 Td (This guide is for educational and authorized security testing purposes only.) Tj ET
+BT /F1 9 Tf 50 618 Td () Tj ET
+endstream
+endobj
+32 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 31 0 R
+/Resources <<
+  /Font <<
+    /F1 <<
+      /Type /Font
+      /Subtype /Type1
+      /BaseFont /Courier
+    >>
+  >>
+>>
+>>
+endobj
+34 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+xref
+0 35
+0000000000 65535 f 
+0000000009 00000 n 
+0000003409 00000 n 
+0000003612 00000 n 
+0000006538 00000 n 
+0000006741 00000 n 
+0000010154 00000 n 
+0000010357 00000 n 
+0000014019 00000 n 
+0000014222 00000 n 
+0000017704 00000 n 
+0000017908 00000 n 
+0000021335 00000 n 
+0000021540 00000 n 
+0000024797 00000 n 
+0000025002 00000 n 
+0000028140 00000 n 
+0000028345 00000 n 
+0000031408 00000 n 
+0000031613 00000 n 
+0000034693 00000 n 
+0000034898 00000 n 
+0000038135 00000 n 
+0000038340 00000 n 
+0000042062 00000 n 
+0000042267 00000 n 
+0000045436 00000 n 
+0000045641 00000 n 
+0000048944 00000 n 
+0000049149 00000 n 
+0000052608 00000 n 
+0000052813 00000 n 
+0000053467 00000 n 
+0000053672 00000 n 
+trailer
+<<
+/Size 35
+/Root 1 0 R
+>>
+startxref
+53722
+%%EOF
