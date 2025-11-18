@@ -1,0 +1,35 @@
+# Darknet Device Scanner - Default Configuration
+
+# Database settings
+db_path: "data/devices.db"
+
+# WiFi scanning settings
+wifi_interface: null  # Auto-detect if null
+wifi_scan_method: "auto"  # auto, scapy, or iwlist
+wifi_scan_duration: 10  # seconds (for scapy)
+
+# Bluetooth scanning settings
+bt_adapter: "hci0"
+bt_scan_duration: 10  # seconds
+bt_scan_types:
+  - classic
+  - ble
+
+# Monitoring settings
+scan_interval: 60  # seconds between scans in monitor mode
+enable_auto_alerts: true
+
+# Threat detection thresholds
+threat_thresholds:
+  low: 2      # Device seen 2-3 times
+  medium: 4   # Device seen 4-6 times
+  high: 7     # Device seen 7-10 times
+  critical: 11  # Device seen 11+ times
+
+# Location tracking
+enable_location_context: true
+default_location: "unknown"
+
+# Logging
+log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+log_file: "logs/darknet.log"
